@@ -25,11 +25,11 @@ x = sorted(x)
 
 out = [tuple(l[i: i + 2]) for i in range(0, len(l), 2)]
 
-for i in range(0, len(l), 2):
-    if len(l) % 2 != 0:
-        out = tuple(l[i: i + 2].append(0))
-    else:
-        out = tuple(l[i: i+2])
+# for i in range(0, len(l), 2):
+#     if len(l) % 2 != 0:
+#         out = tuple(l[i: i + 2].append(0))
+#     else:
+#         out = tuple(l[i: i+2])
 
 
 print(x)

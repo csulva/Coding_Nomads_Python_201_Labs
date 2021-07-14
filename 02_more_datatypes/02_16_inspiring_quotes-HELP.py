@@ -16,5 +16,8 @@ famous_quotes = [
     {"full_name": "Nathan Myhrvold", "quote": "Software is a gas; it expands to fill its container."},
     {"full_name": "Alan Bennett", "quote": "Standards are always out of date.  That’s what makes them standards."}
 ]
-#print(f"The inspiring quote {famous_quotes[0].items()}")
-print(famous_quotes[0].keys())
+for person in famous_quotes:
+    name_change = person["full_name"].split()
+    new_name = name_change[-1]
+    first_name = name_change[0]
+    print(f'"{person["quote"]}" - {new_name}, {first_name}')
