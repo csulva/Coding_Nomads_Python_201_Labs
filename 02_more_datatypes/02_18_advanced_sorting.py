@@ -11,7 +11,7 @@
 
 movie_ratings = {}
 movie_ratings['Lotr'] = 10
-movie_ratings['Twilight'] = 5
+movie_ratings['Avengers: Infinity War'] = 8
 movie_ratings['Harry Potter'] = 7
 movie_ratings['Indiana Jones'] = 6
 

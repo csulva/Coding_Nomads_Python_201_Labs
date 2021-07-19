@@ -22,3 +22,10 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+
+for x in office:
+    names = x["full_name"].split()
+    items = x["item"]
+    last_name_caps = names[1].upper()
+    first_name = names[0]
+    print(f"{last_name_caps}, {first_name}      {items}")
