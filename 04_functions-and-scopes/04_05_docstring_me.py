@@ -3,7 +3,17 @@
 # and what it returns.
 
 def km_to_miles(km):
-    """Add your docstring here."""
+    """Converts kilometers to miles.
+
+    Args:
+      one argument which is int you can represent as kilometers input.
+
+    Returns:
+      the arg into miles.
+
+    Raises:
+      Arg must be int otherwise will not convert.
+    """
     miles = km * 0.6
     return miles
 
