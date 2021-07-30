@@ -2,7 +2,7 @@
 # reading and writing to your CSV file. Make sure to handle the
 # path in a way so that you can run the script from anywhere.
 
-from os import read
+from os import path, read
 import pathlib
 import pprint
 import csv
@@ -19,6 +19,7 @@ for item in desktop.iterdir():
      
 pprint.pprint(items)
 
+# with open() gets replaced with p = Path; p.read_text (& write_t)
 with open('file_counts.csv', 'w') as csvfile:
      write_out = csvfile.write(str(items))
 with open('file_counts.csv', 'r') as read_csv_file_counts:
@@ -27,3 +28,7 @@ with open('file_counts.csv', 'r') as read_csv_file_counts:
      # reader = csv.DictReader(csvfile, fieldnames=['Folder', 'app', 'Document', 'EXE', 'JPEG', 'MOV', 'MP4', 'PDF', 'PNG', 'SH', 'Excel'])
      # counts = list(reader)
      # print(counts)
+
+pathlib.Path('file_counts.csv').write_text(f'{items}')
+csv_file = pathlib.Path('file_counts.csv').read_text()
+print(csv_file)
