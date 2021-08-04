@@ -1,8 +1,6 @@
 # cook.py
-import ingredients as i
-from recipes.soup import make_soup
 soup = "pumpkin soup"
 
-print(f"{soup} is soooo good!")
+if __name__ == '__main__':
+    print(f"{soup} is soooo good!")
 
-make_soup(i.salt)

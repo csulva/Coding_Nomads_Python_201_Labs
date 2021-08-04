@@ -1,5 +1,4 @@
 # ingredients.py
-from recipes.soup import make_soup
 def prepare(ingredient):
     print(f"You cooked the {ingredient}.")
     return f"cooked {ingredient}"
