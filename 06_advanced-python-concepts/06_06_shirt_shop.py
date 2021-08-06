@@ -4,7 +4,5 @@
 colors = ["neon orange", "spring green"]
 sizes = ["S", "M", "L"]
 
-
-
 online_shop = [(k, v) for k in colors for v in sizes]
 print(online_shop)

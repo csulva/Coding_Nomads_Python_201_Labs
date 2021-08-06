@@ -10,3 +10,7 @@
 
 s = {1, 2, 3, 4}
 t = {2, 3, 4, 5, 7}
+
+set_2 = {x**2 for x in s if x > 2} | {y**2 for y in t if y > 2}
+
+print(set_2)

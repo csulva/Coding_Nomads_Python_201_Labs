@@ -15,3 +15,11 @@
 
 base = 10
 digits = set(range(base))
+
+print(digits)
+
+dictionary = {k: v+1 for (k,v) in {(0, 4), (4, 3)}}
+print(dictionary)
+
+# for item in dictionary.values():
+#     print(item)
