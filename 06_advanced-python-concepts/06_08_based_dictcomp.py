@@ -14,12 +14,24 @@
 # ..., 7: [1, 1, 1]}
 
 base = 10
-digits = set(range(base))
+digits = range(0, 1000)
+new_dict = {}
 
-print(digits)
+for x in digits:
+    new_dict[x] = list(f'{x:0>3}')
+    
 
-dictionary = {k: v+1 for (k,v) in {(0, 4), (4, 3)}}
+print(new_dict)
+
+dictionary = {x: f'{x:0>3b}' for x in digits}
 print(dictionary)
 
-# for item in dictionary.values():
-#     print(item)
+
+# def bass_funk():
+#     numbers = f'{x:0>3b}'
+#     dictionary = {x: numbers for x in digits if len(numbers) <= 10}
+#     return dictionary
+
+#print(bass_funk())
+
+
