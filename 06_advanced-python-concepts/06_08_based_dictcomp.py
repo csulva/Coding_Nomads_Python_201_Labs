@@ -18,7 +18,8 @@ digits = range(0, 1000)
 new_dict = {}
 
 for x in digits:
-    new_dict[x] = list(f'{x:0>3}')
+    new_dict[x] = list(f'{x:0>3}')     
+
     
 
 print(new_dict)
