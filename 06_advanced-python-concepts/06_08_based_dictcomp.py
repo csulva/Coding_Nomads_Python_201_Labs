@@ -20,8 +20,6 @@ new_dict = {}
 for x in digits:
     new_dict[x] = list(f'{x:0>3}')     
 
-    
-
 print(new_dict)
 
 dictionary = {x: f'{x:0>3b}' for x in digits}
